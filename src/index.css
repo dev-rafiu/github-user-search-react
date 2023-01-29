@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.container {
+  width: min(90%, 400px);
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+}
+
+form {
+  background-color: rgba(234, 242, 292);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+input,
+button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  width: 50%;
+  margin: 0 auto;
+  background: none;
+  cursor: pointer;
+  background: white;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+@media (hover: hover) {
+  button:hover {
+    background: black;
+    color: white;
+  }
+}
+
+.users-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.user {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.avarta {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
